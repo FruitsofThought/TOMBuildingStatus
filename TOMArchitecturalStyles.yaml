@@ -40,7 +40,7 @@ styles:
 sources:
     mapzen:
         type: TopoJSON
-        url:  http://tiles.mountbatten.nl/all/{z}/{x}/{y}.topojson
+        url:  https://tiles.mountbatten.nl/all/{z}/{x}/{y}.topojson
 
 layers:
     earth:
@@ -63,7 +63,7 @@ layers:
             polygons:
                 order: 1
                 color: '#666'
-                
+
     roads:
         data: { source: mapzen }
         filter: { not: { kind: ferry } }
@@ -100,7 +100,7 @@ layers:
         data: { source: mapzen , layer: architecture}
         wikiicon:
             filter :
-                wikipedia: true 
+                wikipedia: true
             draw:
                 ui-icons-overlay:
                     size: 16px
@@ -125,20 +125,17 @@ layers:
             filter: {"architecture_style": "omani" }
             draw:
                 polygons:
-                    color: [0.992, 0.788, 0.502]
-                    
+                    color: '#fdc980'
         indian:
             filter: {"architecture_style": "indian" }
             draw:
                 polygons:
-                    order: 50
                     color: [0.996, 0.929, 0.667]
         art_deco:
             filter: {"architecture_style": "art_deco" }
             draw:
                 polygons:
-                    order: 50
-                    color: [0.925, 0.969, 0.725]
+                    color: '#FE8C73'
         british_colonial:
             filter: {"architecture_style": "british_colonial" }
             draw:
@@ -158,32 +155,27 @@ layers:
             filter: {"architecture_style": "hyper_modern" }
             draw:
                 polygons:
-                    color: [0.169, 0.514, 0.729]
+                    color: '#2b83ba'
         fromhereonitsNLhyper_modern:
             filter: {"architecture_style": "neo_gothic" }
             draw:
                 polygons:
-                    color: [0.169, 0.514, 0.729]
+                    color: '#2f20ba'
         art_nouveau:
             filter: {"architecture_style": "art_nouveau" }
             draw:
                 polygons:
-                    color: [0.169, 0.514, 0.729]
+                    color: '#811fba'
         modern:
             filter: {"architecture_style": "modern" }
             draw:
                 polygons:
-                    color: [0.169, 0.514, 0.729]
+                    color: '#b51aba'
         rijnllandse_gothic:
             filter: {"architecture_style": "Rijnllandse Gothic" }
             draw:
                 polygons:
-                    color: [0.169, 0.514, 0.729]
-        hyper_modern:
-            filter: {"architecture_style": "hyper_modern" }
-            draw:
-                polygons:
-                    color: [0.169, 0.514, 0.729]
+                    color: '#ba1361'
 
         draw:
             polygons:

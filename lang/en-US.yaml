@@ -1,12 +1,13 @@
 locale: en
 phrases:
     scenes:
-        architecturalstyles:
+        TOMArchitecturalStyles:
             name: Architectural Styles
             group: Architecture
             description: >
-                This map shows a gradient of colors for buildings that have the
-                field 'start_date' set in http://www.openstreetmap.org.
-                The map is currently only available in The Netherlands and
-                in N'Gambo, Zanzibar, Tanzania. The data is particularly good in
-                 The Netherlands.
+                This maps shows the Architectural Style for each building.
+                On lower zoom levels, only bigger buildings are shown.
+                This maps if very detailed in Ng'Ambo on Zanzibar, and has very
+                buildings defined in the Netherlands.
+            stone_town:
+                title: Stone Town

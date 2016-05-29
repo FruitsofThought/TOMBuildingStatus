@@ -1,19 +1,14 @@
 "use strict";
-define(
-  [
-    'require',
-    'jquery',
-    'scene'
-  ],
-  function(require, $, Scene) {
+define(['require', 'scene'],
+  function(require, Scene) {
 
-    class SceneArchitecturalStyles extends Scene {
+    class TOMArchitecturalStyles extends Scene {
       constructor() {
-          console.log("Going to Super Scene architecturalstyles");
+          console.log("Going to Super Scene TOMArchitecturalStyles");
           var config = {
-            "id": "architecturalstyles",
+            "id": "TOMArchitecturalStyles",
             "groupid": "architecture",
-            "languages": ['en-US'],
+            "languages": ['en-US', 'nl-NL'],
           };
           super(config);
         }
@@ -21,17 +16,17 @@ define(
       get path() {
         return require.toUrl("./").split('?')[0];
       }
-      get legend() {
-        var legend = [
-          publicbuildings = {
-            title: 'home.scenes.architecturalstyles.stone_town.title',
-            description: 'home.scenes.architecturalstyles.stone_town.description',
-            css: "background-color: rgb(0.843, 0.098, 0.110);",
-            color: "rgb(215,25,28,255)",
-            minzoom: 14,
-            maxzoom: 22,
-          },
-        ];
+      get notthelegend() {
+        var legend = [];
+        legend['items'] = [];
+        legend['items'].push({
+          title: 'home.scenes.TOMArchitecturalStyles.stone_town.title',
+          description: 'home.scenes.TOMArchitecturalStyles.stone_town.description',
+          css: "background-color: rgb(0.843, 0.098, 0.110);",
+          color: "rgb(215,25,28,255)",
+          minzoom: 14,
+          maxzoom: 22,
+        });
         return legend;
       }
     };
@@ -70,6 +65,6 @@ define(
       color: [0.169, 0.514, 0.729]
     */
 
-    return new SceneArchitecturalStyles();
+    return new TOMArchitecturalStyles();
 
   });
