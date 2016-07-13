@@ -1,90 +1,16 @@
 items:
     -
-      filter: "around this time"
-      title: keys.building:architecture.stone_town
-      osmkeyvalue: "architecture.architecture_style.values.stone_town"
-      description: "home.scenes.TOMArchitecturalStyles.stone_town.description"
-      css: "background-color: #D7191C;"
-      color: "#d7191c"
-      icon: ""
-      minzoom: 14
-      maxzoom: 20
+      osmkeyvalue: architecture.building_condition.values.good
+      color: green
     -
-      title: keys.building:architecture.art_deco
-      osmkeyvalue: architecture.architecture_style.values.art_deco
-      description: home.scenes.TOMArchitecturalStyles.art_deco.description
-      color: "#FE8C73"
-      samplelocation:
-        title: Church, Almelo, NL
-        lat: 52.3554
-        lon: 6.6678
-        zoom: 16
-        title: This is an extra color in the chain. keys.building:architecture.stone_town
-        osmkeyvalue: architecture.architecture_style.values.first_swahili
-        description: home.scenes.TOMArchitecturalStyles.first_swahili.description
-        color: "#e75b3a"
+      osmkeyvalue: architecture.building_condition.values.average
+      color: orange
     -
-      title: keys.building:architecture.classic_swahili
-      osmkeyvalue: architecture.architecture_style.values.classic_swahili
-      description: home.scenes.TOMArchitecturalStyles.classic_swahili.description
-      color: "#f89d59"
+      osmkeyvalue: architecture.building_condition.values.poor
+      color: yellow
     -
-      title: keys.building:architecture.omani
-      osmkeyvalue: architecture.architecture_style.values.omani
-      description: home.scenes.TOMArchitecturalStyles.omani.description
-      color: "#fdc980"
+      osmkeyvalue: architecture.building_condition.values.ruinous
+      color: red
     -
-      title: keys.building:architecture.indian
-      osmkeyvalue: architecture.architecture_style.values.indian
-      description: home.scenes.TOMArchitecturalStyles.indian.description
-      color: "#feedaa"
-    -
-      title: keys.building:architecture.british_colonial
-      osmkeyvalue: architecture.architecture_style.values.british_colonial
-      description: home.scenes.TOMArchitecturalStyles.british_colonial.description
-      color: "#c7e8ad"
-    -
-      title: keys.building:architecture.eclectic
-      osmkeyvalue: architecture.architecture_style.values.eclectic
-      description: home.scenes.TOMArchitecturalStyles.eclectic.description
-      color: "#9cd3a6"
-    -
-      title: keys.building:architecture.modernism
-      osmkeyvalue: architecture.architecture_style.values.modernism
-      description: home.scenes.TOMArchitecturalStyles.modernism.description
-      color: "#63abb0"
-    -
-      title: keys.building:architecture.hyper_modern
-      osmkeyvalue: architecture.architecture_style.values.hyper_modern
-      description: home.scenes.TOMArchitecturalStyles.hyper_modern.description
-      color: "#2b83ba"
-    -
-      title: keys.building:architecture.neo_gothic
-      osmkeyvalue: architecture.architecture_style.values.neo_gothic
-      description: home.scenes.TOMArchitecturalStyles.neo_gothic.description
-      color: "#2f20ba"
-      samplelocation:
-        title: Kruisherenklooster, Uden, NL
-        lat: 51.66123
-        lon: 5.61041
-        zoom: 19
-    -
-      title: keys.building:architecture.art_nouveau
-      osmkeyvalue: architecture.architecture_style.values.art_nouveau
-      description: home.scenes.TOMArchitecturalStyles.art_nouveau.description
-      color: "#811fba"
-      samplelocation:
-        title: Rams Woerthe, Steenwijk, NL
-        lat: 52.78537
-        lon: 6.11262
-        zoom: 18
-    -
-      title: keys.building:architecture.modern
-      osmkeyvalue: architecture.architecture_style.values.modern
-      description: home.scenes.TOMArchitecturalStyles.modern.description
-      color: "#b51aba"
-    -
-      title: keys.building:architecture.rijnllandse_gothic
-      osmkeyvalue: architecture.architecture_style.values.rijnllandse_gothic
-      description: home.scenes.TOMArchitecturalStyles.rijnllandse_gothic.description
-      color: "#ba1361"
+      osmkeyvalue: architecture.kind.values.construction
+      css: "border: 1px solid #000;background-color:#fff"

@@ -1,6 +1,5 @@
-﻿scene:
-    background:
-        color: '#353535'
+import:
+  - ../TOMBaseStyles/TOMDark.yaml
 
 cameras:
     perspective:
@@ -40,7 +39,8 @@ styles:
 sources:
     mapzen:
         type: TopoJSON
-        url:  https://tiles.mountbatten.nl/all/{z}/{x}/{y}.topojson
+        #urltogeneratethem:  https://tiles.mountbatten.nl:445/all/{z}/{x}/{y}.topojson
+        url: https://tiles.mountbatten.nl/all/{z}/{x}/{y}.topojson
 
 layers:
     earth:
@@ -106,76 +106,31 @@ layers:
                     size: 16px
                     visible: true
                     sprite: wikipedia
-        stone_town:
-            filter: {"architecture_style": "stone_town" }
+        construction:
+            filter: {"kind": "construction" }
             draw:
                 polygons:
-                    color: [0.843, 0.098, 0.110]
-        first_swahili:
-            filter: {"architecture_style": "first_swahili" }
+                    color: "#fff"
+        good:
+            filter: {"building_condition": "good" }
             draw:
                 polygons:
-                    color: [0.906, 0.357, 0.227]
-        classic_swahili:
-            filter: {"architecture_style": "classic_swahili" }
+                    color: green
+        average:
+            filter: {"building_condition": "average" }
             draw:
                 polygons:
-                    color: [0.973, 0.616, 0.349]
-        omani:
-            filter: {"architecture_style": "omani" }
+                    color: orange
+        poor:
+            filter: {"building_condition": "poor" }
             draw:
                 polygons:
-                    color: '#fdc980'
-        indian:
-            filter: {"architecture_style": "indian" }
+                    color: yellow
+        ruinous:
+            filter: {"building_condition": "ruinous" }
             draw:
                 polygons:
-                    color: [0.996, 0.929, 0.667]
-        art_deco:
-            filter: {"architecture_style": "art_deco" }
-            draw:
-                polygons:
-                    color: '#FE8C73'
-        british_colonial:
-            filter: {"architecture_style": "british_colonial" }
-            draw:
-                polygons:
-                    color: [0.780, 0.910, 0.678]
-        eclectic:
-            filter: {"architecture_style": "eclectic" }
-            draw:
-                polygons:
-                    color: [0.612, 0.827, 0.651]
-        modernism:
-            filter: {"architecture_style": "modernism" }
-            draw:
-                polygons:
-                    color: [0.388, 0.671, 0.690]
-        hyper_modern:
-            filter: {"architecture_style": "hyper_modern" }
-            draw:
-                polygons:
-                    color: '#2b83ba'
-        fromhereonitsNLhyper_modern:
-            filter: {"architecture_style": "neo_gothic" }
-            draw:
-                polygons:
-                    color: '#2f20ba'
-        art_nouveau:
-            filter: {"architecture_style": "art_nouveau" }
-            draw:
-                polygons:
-                    color: '#811fba'
-        modern:
-            filter: {"architecture_style": "modern" }
-            draw:
-                polygons:
-                    color: '#b51aba'
-        rijnllandse_gothic:
-            filter: {"architecture_style": "Rijnllandse Gothic" }
-            draw:
-                polygons:
-                    color: '#ba1361'
+                    color: red
 
         draw:
             polygons:

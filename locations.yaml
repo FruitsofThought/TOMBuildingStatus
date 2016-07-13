@@ -5,23 +5,3 @@ locationsList:
         lat: -6.1653329612873105
         lon: 39.19835239648819
         zoom: 15
-    -
-        title: Church, Almelo, NL
-        lat: 52.3554
-        lon: 6.6678
-        zoom: 16
-    -
-        title: Kruisherenklooster, Uden, NL
-        lat: 51.6598
-        lon: 5.6155
-        zoom: 16
-    -
-        title: Rams Woerthe, Steenwijk, NL
-        lat: 52.7893
-        lon: 6.1134
-        zoom: 15
-    -
-        title: Heerhugowaard
-        lat: 52.6537
-        lon: 4.8049
-        zoom: 13

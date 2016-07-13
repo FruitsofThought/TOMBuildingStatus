@@ -1,13 +1,8 @@
 locale: en
 phrases:
     scenes:
-        TOMArchitecturalStyles:
-            name: Architectural Styles
+        TOMBuildingStatus:
+            name: Building Condition
             group: Architecture
             description: >
-                This maps shows the Architectural Style for each building.
-                On lower zoom levels, only bigger buildings are shown.
-                This maps if very detailed in Ng'Ambo on Zanzibar, and has very
-                buildings defined in the Netherlands.
-            stone_town:
-                title: Stone Town
+                This maps shows the state a building is in (as recorded on OSM).
